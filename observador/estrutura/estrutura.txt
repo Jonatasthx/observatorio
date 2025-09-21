@@ -1,0 +1,60 @@
+N/t: caso a nossa querida prof não consiga entender a letra do colega, ele fez a estrutura escrita 
+
+/observador
+ ├── Corpo_Celeste.java
+ ├── Planeta.java
+ ├── Asteroide.java
+ ├── Estrela.java
+ └── Main.java
+
+CorpoCeleste(classe mãe)
+
+-Nome: String
+-Diam: Double
+-massa: Double 
+-comp: list<comp>
+-orb: list<orb>
+-ProdLuz: Double 
+-LocalEspaco: string 
+
++Corpo_Celeste(Nome: String, Diam: Double, massa: Double, comp: list<comp>, orb: list<orb>, ProdLuz: Double, LocalEspaco: string)
+
+
+Planeta(extends corpoceleste)
+
+-QtdLua: int
+-Anel: boolean
+-Vida: boolean
+-SisPar: string
+
++Planeta (QtdLua: int, Anel: boolean, Vida: double, SisPar: string, Nome: String, Diam: Double, massa: Double, comp: list<comp>, orb: list<orb>, ProdLuz: Double, LocalEspaco: string)
+
+
+Asteroide(extends corpoceleste)
+
+-TipOrb: string
+-GpOrb: string 
+-diam2: double 
+-Vel: double
+-Risco: double
+-Dist: double
+-PotPer: double
+-ProbImp: double
+
++Asteroide (TipOrb: string, GpOrb: string, diam2: double, Vel: double, Risco: double, Dist: double, PotPer: double, ProbImp: double, Nome: String, Diam: Double, massa: Double, comp: list<comp>, orb: list<orb>, ProdLuz: Double, LocalEspaco: string)
+
+
+Estrela(extends corpceleste)
+
+-tipEsp: string
+-Lum: double
+-Tipo: string 
+-temp: double
+-EstEvol: string
+
++Estrela(tipEsp: string, Lum: double, Tipo: string, temp: double, EstEvol: string)
++AtualTipo(): void 
++CalTempVdtotal(): double 
++CalTempVdRest(): double
++ImpCalTempVdRest(): double 
++CalcLumEst(): double
